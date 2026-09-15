@@ -1,11 +1,14 @@
 from datetime import datetime
+from Usuarios import Pac, Tecnico
+from Classes_suporte import Anexo, Avaliacao, Categoria,\
+                            Comentario, Prioridade, Status
 
 
 class Chamado: #Gabriel
 
-    def __init__(self, id_chamado:int, titulo, descricao, #1
-                        status, prioridade, categoria, sala, #2
-                        tecnico_responsavel, solicitante): #3
+    def __init__(self, id_chamado:int, titulo:str, descricao:str, #1
+                        status:Status, prioridade:Prioridade, categoria:Categoria, sala:str, #2
+                        tecnico_responsavel:Tecnico, solicitante:Pac): #3
 
     #área de informação do chamado - 1
         self.__id_chamado = id_chamado
